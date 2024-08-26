@@ -28,7 +28,7 @@ const httpInstance = app.listen(config.PORT, async () => {
 console.log(
   `Servidor funcionando en puerto ${config.PORT} conectada a ${config.SERVER}. PID ${process.pid}`
 );
-// console.log(config.SECRET)
+console.log(config.SECRET);
 const socketServer = socketInit(httpInstance);
 
 app.set("socketServer", socketServer);
